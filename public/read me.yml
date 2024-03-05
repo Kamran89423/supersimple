@@ -1,0 +1,8 @@
+echo "# supersimple" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Kamran89423/supersimple.git
+git push -u origin main
+ follow me on github link below thanks for downloading my template

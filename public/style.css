@@ -1,0 +1,405 @@
+body{
+    background-color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+nav{
+    background-image: url(images/carousel-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    min-width: 100%;
+    height: 550px;
+}
+@media(max-width:347px){
+    nav{
+        max-width: 100%;
+    }
+}
+body,ul{
+    padding: 0% auto;
+    margin: 0% auto;
+
+}
+.nav-bar{
+display: flex;
+text-align: center;
+color: white;
+justify-content: center;
+margin-right: 70px;
+position: sticky;
+top: 0;
+color: red;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    text-align: center;
+}
+.logo img{
+    width: 50px;
+    height: 40px;
+    margin-right: 20px;
+    margin-right: 65px;
+}
+.logo img:hover{
+    animation: mylogo 1s;
+}
+@keyframes mylogo {
+    50%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-20deg);
+    }
+}
+.hero img{
+    width: 300px;
+    height:300px;
+    animation: myanime 5s infinite;
+    margin-left: 180px;
+}
+
+@keyframes myanime {
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+.myslider{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    
+}
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+
+}
+.more{
+    color: rgb(255, 200, 0);
+}
+.info h1{
+    font-size: xx-large;
+}
+.order{
+    text-align: center;
+    border: none;
+    border-radius:10px ;
+    background-color: rgb(255, 225, 0);
+    color: black;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    border: 1px solid rgb(255, 225, 0);
+    transition: background-color 0.5s ease-in;
+}
+.order:hover{
+    background-color: transparent;
+    border: 1px solid rgb(255, 225, 0);
+    color: yellow;
+}
+.about{
+    display: flex;
+    background-color: #f3f3ff;
+    justify-content: space-around;
+    align-items: center;
+}
+.about:hover .im img{
+    animation: myimg 2s ease-in;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:470px){
+    .client{
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+.infor{
+    width: 50%;
+    text-align: center;
+    animation: myabout 2s ease-in;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+@keyframes myabout {
+    0%{
+        transform: translateX(-140%);
+    }
+}
+.im img{
+   width: 350px;
+   height: 350px;
+
+}
+@keyframes myimg {
+    0%{
+        transform: translateX(140%);
+    }
+}
+@media (max-width:1108px) {
+    .myslider{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+.funky{
+    text-align: center;
+    color: rgb(73, 73, 73);
+}
+.main{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cooks img{
+border-radius: 100%;
+width: 220px;
+height: 200px;
+}
+.cooks img:hover{
+    animation: mycooks 3s;
+}
+@keyframes mycooks {
+    0%{
+        transform: rotate(20deg);
+        transform: scale(1);
+    }
+    50%{
+        transform: rotate(-20deg);
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.dark.light{
+    width: 60px;
+    height: 60px;
+    border: none;
+    position: sticky ;
+    top: 0%;
+    color: white;
+    background-color: rgb(246, 92, 36);
+    text-align: center;
+    align-items: center;
+
+}
+@media (min-width:600px) {
+    .foods img{
+        max-width: 60%;
+    }
+}
+@media (max-width:529px) {
+   .main{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+   }
+}
+.loop{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width:960px) {
+    .foods img{
+        width: 50%;
+    }
+}
+.foods{
+    display: flex;
+    width: 30%;
+    height: 550px;
+    background-color: rgb(245, 242, 242);
+    justify-content: center;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+@media (max-width:956px) {
+   .foods img{
+    width: 50%;
+   } 
+}
+.foods img{
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    max-width: 100%;
+}
+.bar img{
+    display: none;
+    margin-left: 20px;
+    width: 50px;
+    height: 35px;
+}
+@media (max-width: 749px) {
+    .nav-bar{
+        display: none;
+    }
+    .logo img{
+        display: block;
+    }
+    .bar img{
+        display: block;
+    }
+}
+@media (max-width:1107px) {
+    .infor{
+        flex-wrap: wrap;
+    }
+    .hero img{
+      display: none;
+    }
+}
+.nav-bar{
+    text-align: center;
+}
+.moree{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    
+}
+.mera{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:1078px) {
+    .about{
+        flex-direction: column;
+    }
+    .im img{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width:958px) {
+    .foods{
+        max-width: 100%;
+        min-width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+
+    }
+    .foods img{
+        width: 100%;
+        height: 300px;
+    }
+}
+@media (max-width:1100px) {
+    .main{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .cooks img{
+        width: 350px;
+        height: 300px;
+    }
+}
+@media (max-width:345px) {
+    .foods{
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%
+    }
+}
+.cart{
+    display: flex;
+    width: 110px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(22, 22, 94);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding: 2px;
+    cursor: pointer;
+    align-self: center;
+
+
+
+}
+.my{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart:hover{
+    background-color: rgb(255, 45, 45);
+}
+@media (max-width:400px){
+    .foods img{
+        min-width: 100%;
+    }
+}
+@media(max-width:956px){
+    .foods img{
+        width: 50%;
+    }
+}
+@media (max-width:360px){
+    .foods{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+}
+.client{
+    max-width: 100%;
+    background-color:#f3f3ff;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.e img{
+    width: 270px;
+    height: 250px;
+}
+.e {
+
+    margin-left: 60px;
+}
+@media (max-width:818px){
+    .client{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+        display: flex;
+    }
+}
